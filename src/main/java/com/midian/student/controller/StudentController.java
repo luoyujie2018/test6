@@ -24,4 +24,10 @@ public class StudentController {
         return studentService.GetStudentList();
     }
 
+    @ApiOperation("获取学生列表2")
+    @RequestMapping(value = {"/getStudent2"},method = {RequestMethod.GET,RequestMethod.POST})
+    public tb_student GetStudentList2(){
+        return studentService.GetStudentList();
+    }
+
 }
